@@ -1,0 +1,2 @@
+# sell
+基于springboot的微信点餐系统，旨在学习springboot以及微信公众号开发相关知识
