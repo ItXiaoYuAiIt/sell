@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: ENC(fRKclB+kgEc1bOESKCyeDw==)
+    password: ENC(m9D1elQtk+X8tDU/Uy1lNg==)
+    url: jdbc:mysql://192.168.0.15/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.0.15
+    port: 9379
+
+server:
+  context-path: /sell
+
+#jasyptº”—Œ
+jasypt:
+  encryptor:
+    password: sell
+
+
+# Œ¢–≈≈‰÷√
+wechat:
+  mpAppId: xxxxxx
+  mpAppSecret: xxxxxx
+  openAppId: xxxxxx
+  openAppSecret: xxxxxx
+  mchId: xxxxxx
+  mchKey: xxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://sell.com/sell/pay/notify
+  templateId:
+    orderStatus: e-xxxxxx-yeQ
+
+projectUrl:
+  wechatMpAuthorize: http://sell.com
+  wechatOpenAuthorize: http://sell.com
+  sell: http://sell.com
+
